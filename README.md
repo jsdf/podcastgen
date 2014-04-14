@@ -16,7 +16,7 @@ items: [
     date: "Mon, 3 Mar 2014 00:00:00 +1100", # RFC 2822 formatted date
   },
   {
-    title: "jacques green mix",
+    title: "jacques greene mix",
     path: "LWEPodcast198JacquesGreene.mp3",
     date: "Mon, 14 Apr 2014 00:00:00 +1100", 
   }
@@ -43,7 +43,7 @@ podcastgen example/jsdfpodcast.cson > podcast.xml
     <guid isPermaLink="true">http://files.ktfr.net/podcast/cashmere.mp3</guid>
   </item>
   <item>
-    <title>jacques green mix</title>
+    <title>jacques greene mix</title>
     <media:content url="http://files.ktfr.net/podcast/LWEPodcast198JacquesGreene.mp3" type="audio/mpeg" medium="audio" expression="full"/>
     <enclosure url="http://files.ktfr.net/podcast/LWEPodcast198JacquesGreene.mp3" type="audio/mpeg"/>
     <pubDate>Mon, 14 Apr 2014 00:00:00 +1100</pubDate>
