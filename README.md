@@ -4,16 +4,16 @@ generate itunes-compatible podcasts from cson or json
 
 ## example
 
-example/jsdfpodcast.cson:
+`example/jsdfpodcast.cson`:
 ```coffee
 title: "jsdf podcast",
 baseUrl: "http://files.ktfr.net/podcast/",
 podcastUrl: "http://files.ktfr.net/podcast/podcast.xml",
 items: [
   {
-  title: "cashmere cat mix",
-  path: "cashmere.mp3", # relative from baseUrl
-  date: "Mon, 3 Mar 2014 00:00:00 +1100", # RFC 2822 formatted date
+    title: "cashmere cat mix",
+    path: "cashmere.mp3", # relative from baseUrl
+    date: "Mon, 3 Mar 2014 00:00:00 +1100", # RFC 2822 formatted date
   },
   {
     title: "jacques green mix",
@@ -28,7 +28,7 @@ run it:
 podcastgen example/jsdfpodcast.cson > podcast.xml
 ```
 
-podcast.xml:
+`podcast.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
@@ -61,7 +61,7 @@ rssdata = podcastgen({
   title: "my podcast",
   baseUrl: "http://example.com/podcast/",
   ...
-  })
+})
 ```
 
 ### install
