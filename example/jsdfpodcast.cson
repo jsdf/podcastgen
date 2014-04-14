@@ -1,0 +1,15 @@
+title: "jsdf podcast",
+baseUrl: "http://files.ktfr.net/podcast/",
+podcastUrl: "http://files.ktfr.net/podcast/podcast.xml",
+items: [
+  {
+    title: "cashmere cat mix",
+    path: "cashmere.mp3", # relative from baseUrl
+    date: "Mon, 3 Mar 2014 00:00:00 +1100", # RFC 2822 formatted date
+  },
+  {
+      title: "jacques green mix",
+      path: "LWEPodcast198JacquesGreene.mp3",
+      date: "Mon, 14 Apr 2014 00:00:00 +1100", 
+  }
+]

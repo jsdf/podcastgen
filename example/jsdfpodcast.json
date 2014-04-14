@@ -1,0 +1,17 @@
+{
+  "title": "jsdf podcast",
+  "baseUrl": "http://files.ktfr.net/podcast/",
+  "podcastUrl": "http://files.ktfr.net/podcast/podcast.xml",
+  "items": [
+    {
+      "title": "cashmere cat mix",
+      "path": "cashmere.mp3",
+      "date": "Thu, 21 Nov 2013 00:00:00 +1100"
+    },
+    {
+      "title": "jacques green mix",
+      "path": "LWEPodcast198JacquesGreene.mp3",
+      "date": "Mon, 14 Apr 2014 00:00:00 +1100"
+    }
+  ]
+}

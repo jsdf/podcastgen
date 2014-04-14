@@ -1,0 +1,36 @@
+{
+  "name": "podcastgen",
+  "description": "generate itunes-compatible podcasts from cson or json",
+  "keywords": [
+    "podcast"
+  ],
+  "author": "James Friend",
+  "version": "0.0.1",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/jsdf/podcastgen/master/LICENSE"
+    }
+  ],
+  "files": [
+    "index.js",
+    "bin/",
+    "lib/"
+  ],
+  "bin": {
+    "podcastgen": "./bin/podcastgen"
+  },
+  "scripts": {
+    "prepublish": "cake build"
+  },
+  "homepage": "https://github.com/jsdf/podcastgen",
+  "bugs": "https://github.com/jsdf/podcastgen/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsdf/podcastgen.git"
+  },
+  "dependencies": {
+    "json2xml": "^0.1.1",
+    "cson-safe": "^0.1.1"
+  }
+}
