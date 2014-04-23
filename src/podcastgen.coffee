@@ -1,6 +1,14 @@
 json2xml = require 'json2xml'
 url = require 'url'
 
+escapeSpecialChars = (text) ->
+  text
+    .replace /&/g, "&amp;"
+    .replace /</g, "&lt;"
+    .replace />/g, "&gt;"
+    .replace /"/g, "&quot;"
+    .replace /'/g, "&#039;"
+
 module.exports = (opts) ->
   feed = {
     attr: {
@@ -11,10 +19,10 @@ module.exports = (opts) ->
     },
     rss: {
       channel: [
-        {"atom:link":'', attr: { href: opts.podcastUrl, rel: "self", type: "application/xml" }},
+        {"atom:link":'', attr: { href: escapeSpecialChars opts.podcastUrl, rel: "self", type: "application/xml" }},
         {title: opts.title},
       ].concat opts.items.map (item) ->
-        itemUrl = url.resolve((opts.baseUrl||''), item.path)
+        itemUrl = escapeSpecialChars url.resolve((opts.baseUrl||''), item.path)
         {
           item: [
             {title: item.title},
