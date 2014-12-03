@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "json2xml": "^0.1.1",
-    "cson-safe": "^0.1.1"
+    "cson-safe": "^1.0.0"
   }
 }
